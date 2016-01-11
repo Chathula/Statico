@@ -1,27 +1,27 @@
-# Statica
+# statico
 This small tool can read any static file and make it dynamic.specially made to make html static files into dynamic.
 
 ##Usage
 
-##### require statica module
+##### require statico module
 
 ```javascript
-var statica = require('statica');
+var statico = require('statico');
 ```
 
-##### use statica .use method to read file
+##### use statico .use method to read file
 
 ```javascript
-var data = statica.use('filename.html');
+var data = statico.use('filename.html');
 data.then(function (data)) {
   console.log(data);
 }
 ```
 
-##### use statica .use to change content dynamically and return the changed data
+##### use statico .use to change content dynamically and return the changed data
 
 ```javascript
-var data = statica.use('filename.html', { "title" : "My title", "text" : "this is the text" });
+var data = statico.use('filename.html', { "title" : "My title", "text" : "this is the text" });
 data.then(function (data)) {
   console.log(data);
 }
@@ -30,7 +30,7 @@ data.then(function (data)) {
 ### OR
 
 ```javascript
-var data = statica.use('filename.html', { "title" : "My title", "text" : "this is the text" }, function (data) {
+var data = statico.use('filename.html', { "title" : "My title", "text" : "this is the text" }, function (data) {
   console.log(data);
 });
 ```
@@ -47,7 +47,7 @@ var data = statica.use('filename.html', { "title" : "My title", "text" : "this i
 <body>
 
   <p>Dynamic text : ${text}</p>
-  
+
 </body>
 </html>
 ```
