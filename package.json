@@ -1,0 +1,26 @@
+{
+  "name": "statico",
+  "version": "1.0.4",
+  "description": "This small tool can read any static file and make it dynamic.specially made to make html static files into dynamic.",
+  "main": "statico.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chathula/Statico.git"
+  },
+  "keywords": [
+    "javascript",
+    "static",
+    "dynamic",
+    "template",
+    "html"
+  ],
+  "author": "Chathula Sampath Perera <schathula@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chathula/Statico/issues"
+  },
+  "homepage": "https://github.com/Chathula/Statico#readme"
+}
