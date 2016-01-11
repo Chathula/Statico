@@ -1,4 +1,4 @@
-# statico
+# Statico
 This small tool can read any static file and make it dynamic.specially made to make html static files into dynamic.
 
 ##Usage
