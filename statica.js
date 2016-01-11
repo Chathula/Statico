@@ -14,7 +14,6 @@ var statica = {
       });
 
     } else {
-      //var replace = JSON.parse(replace);
       var promise = new Promise(function (resolve, reject) {
 
         var stream = fs.createReadStream(filename);
