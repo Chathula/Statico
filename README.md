@@ -30,7 +30,7 @@ data.then(function (data)) {
 ### OR
 
 ```javascript
-var data = statico.use('filename.html', { "title" : "My title", "text" : "this is the text" }, function (data) {
+statico.use('filename.html', { "title" : "My title", "text" : "this is the text" }, function (data) {
   console.log(data);
 });
 ```
@@ -50,4 +50,19 @@ var data = statico.use('filename.html', { "title" : "My title", "text" : "this i
 
 </body>
 </html>
+```
+
+##### use statico with http web server
+
+```javascript
+var http = require('http');
+var statico = require('statico');
+
+http.createServer(function (req, res) {
+  res.writeHead(200, { "Content-Type" : "text/html" });
+  statico.use('file.html', { "title" : "My title", "text" : "This is text" }, function (data) {
+    res.write(data);
+    res.end();
+  });
+}).listen(8000);
 ```
