@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var statica = {
+var statico = {
 
   use : function (filename, replace, cb) {
 
@@ -19,7 +19,7 @@ var statica = {
         var stream = fs.createReadStream(filename);
         stream.on('data', function (chunk) {
           // replace the data
-          var str = statica.replacer(chunk.toString(), replace);
+          var str = statico.replacer(chunk.toString(), replace);
 
           if (typeof cb === 'undefined') {
             resolve(str);
@@ -48,4 +48,4 @@ var statica = {
 
 };
 
-module.exports = statica;
+module.exports = statico;
