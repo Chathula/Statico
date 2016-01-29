@@ -1,6 +1,6 @@
 {
   "name": "statico",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "This small tool can read any static file and make it dynamic.specially made to make html static files into dynamic.",
   "main": "statico.js",
   "scripts": {
