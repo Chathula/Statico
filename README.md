@@ -5,14 +5,14 @@ This small tool can read any static file and make it dynamic.specially made to m
 
 ##What's New?
   -- Now "Statico" can automatically link external CSS and Javascript files to the HTML page
-  
+
   ```javascript
   statico.setup(req, res); // This method gives the access of HTTP Request and Response to Statico Module
   ```
-  
+
 #####Note
 ```
-You must validate req.url correctly. (i have explained a '/' route) if you don't, it will break the code
+You must validate req.url correctly. (i have explained a '/' and '/me' route) if you don't, it will break the code
 ```
 
 ##Usage
@@ -92,7 +92,7 @@ http.createServer(function (req, res) {
         res.write(data);
         res.end();
     });
-  } else if (req.url === '/me.html') {
+  } else if (req.url === '/me') {
     var d = statico.use('me.html');
       d.then(function (data) {
         res.writeHead(200, { "Content-Type" : "text/html" });
