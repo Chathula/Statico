@@ -45,7 +45,7 @@ var statico = {
       var promise = new Promise(function (resolve, reject) {
         var stream = fs.createReadStream(filename);
         stream.on('data', function (chunk) {
-          var str = statico.toString();
+          var str = chunk.toString();
           resolve(str);
         });
       });
